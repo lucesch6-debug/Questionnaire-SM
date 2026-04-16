@@ -1,0 +1,53 @@
+.quiz-shell {
+  --quiz-ink: #162429;
+  --quiz-muted: #5f6f73;
+  --quiz-accent: #d97706;
+  --quiz-accent-soft: #fff0d8;
+  --quiz-accent-ink: #9a5604;
+  --quiz-sage: #1f7664;
+  --quiz-success-soft: #e8f6f3;
+  --quiz-success-ink: #185d50;
+  --quiz-danger-soft: #fdeced;
+  --quiz-danger-ink: #973a3d;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(217, 119, 6, 0.16), transparent 26%),
+    radial-gradient(circle at 100% 0%, rgba(31, 118, 100, 0.14), transparent 30%),
+    linear-gradient(180deg, #f6efe3 0%, #f7f4ec 52%, #edf4f0 100%);
+  color: var(--quiz-ink);
+  font-family: "Aptos", "Segoe UI", sans-serif;
+}
+
+.quiz-title {
+  font-family:
+    "Iowan Old Style", "Palatino Linotype", "Book Antiqua",
+    Baskerville, Georgia, serif;
+  letter-spacing: -0.04em;
+}
+
+.quiz-card {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 50px rgba(78, 66, 33, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.quiz-metric {
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.68));
+}
+
+.quiz-choice {
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease,
+    color 160ms ease;
+}
+
+.quiz-choice:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 30px rgba(59, 52, 29, 0.07);
+}
